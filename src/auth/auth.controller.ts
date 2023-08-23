@@ -23,7 +23,7 @@ export class AuthConroller{
                 },
                 data: {
                     example: {
-                        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc5NzU5OGIxLWExZjMtNDUyNy05Y2ZlLTFkYmU4ZmU3ZWIyMCIsImVtYWlsIjoia29rb0BtYWlsaW5hdG9yLmNvbSIsImlhdCI6MTY5MjgxNjk3MiwiZXhwIjoxNjkyODE3OTcyfQ.hG5KS6D0DdFXDF_AZwzLwzJjkaRqd5bQHT9a0wSZ3a4"
+                        "token": "eyJhbGciOiJIUSZ3a4gegehejhhjeiie"
                     }
                 }
             }
