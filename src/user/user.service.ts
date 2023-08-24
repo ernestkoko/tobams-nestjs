@@ -72,6 +72,7 @@ export class UserService implements IUserService{
         if(dto.last_name) user.last_name = dto.last_name;
         if(dto.first_name) user.first_name = dto.first_name;
         const savedUser = await this.userRepository.save(user);
+        if(savedUser.password) delete savedUser.password;
         return savedUser;
     }
 

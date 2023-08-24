@@ -96,7 +96,11 @@ export class UserController{
                 },
                 data: {
                     example: {
-                        message: "Welcome to your dashboard, Ernest"
+                        "id": "64e64cddc19bc105b9e196f6",
+                        "uuid": "797598b1-a1f3-4527-9cfe-1dbe8fe7eb20",
+                        "email": "koko@mailinator.com",
+                        "first_name": "Erny",
+                        "last_name": "Efe"
                     }
                 }
             }
