@@ -2,7 +2,7 @@ import { Controller, Request, Post, HttpCode, HttpStatus, UseGuards, BadRequestE
 import { AuthService } from "./auth.service";
 import { LocalAuthGuard } from "./guards/local.auth.guard";
 import { exception, response } from "src/standards/functions";
-import { ApiResponse, ApiTags } from "@nestjs/swagger";
+import { ApiBody, ApiResponse, ApiTags } from "@nestjs/swagger";
 
 @Controller('auth')
 @ApiTags("auth")
@@ -12,6 +12,23 @@ export class AuthConroller{
     @Post('/login')
     @UseGuards(LocalAuthGuard)
     @HttpCode(HttpStatus.OK)
+    @ApiBody({
+        schema: {
+            type: 'object',
+            properties: {
+                username: {
+                    type: 'string',
+                    example: 'example@gmail.com',
+                    description: 'The email of the user'
+                },
+                password: {
+                    type: 'string',
+                    example: 'Password335d.',
+                    description: "The password of the user. It should be a strong password."
+                }
+            }
+        }
+    })
     @ApiResponse({
         schema: {
             type: 'object',
