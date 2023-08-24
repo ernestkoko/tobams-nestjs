@@ -48,7 +48,7 @@ export class UserController{
         }catch(e){
             exception(e);
         }
-    }
+    } 
 
     @Get("dashboard")
     @UseGuards(JwtGuard)
