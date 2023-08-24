@@ -2,9 +2,10 @@ import { Controller, Request, Post, HttpCode, HttpStatus, UseGuards, BadRequestE
 import { AuthService } from "./auth.service";
 import { LocalAuthGuard } from "./guards/local.auth.guard";
 import { exception, response } from "src/standards/functions";
-import { ApiResponse } from "@nestjs/swagger";
+import { ApiResponse, ApiTags } from "@nestjs/swagger";
 
 @Controller('auth')
+@ApiTags("auth")
 export class AuthConroller{
     constructor(private readonly authService: AuthService){}
 
